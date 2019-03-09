@@ -1,4 +1,7 @@
 node {
+    stage('git pull') {
+        git "https://github.com/Varuni26/git-demo.git"
+    }
     stage('compile') {
      echo "Compile stage"   
     }
